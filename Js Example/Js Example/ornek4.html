@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS01</title>
+</head>
+<style>
+input[type="button"]{
+width:50px;
+height: 50px;
+line-height: 50px;
+ 
+}
+#butonlar{
+text-align: center;
+}
+#sonuc{
+background: #12123a;
+color:#efefaa;
+font-size:2em;
+padding:10px;
+margin:10px;
+text-align: center;
+}
+</style>
+<body>
+<div id="butonlar">
+<input type="button" id="t1" value="1">
+<input type="button" id="t5" value="5">
+<input type="button" id="t10" value="10">
+<input type="button" id="t50" value="50">
+</div>
+<div id="sonuc">0</div> 
+ 
+<script>
+var b1=document.getElementById("t1");
+var b2=document.getElementById("t5");
+var b3=document.getElementById("t10");
+var b4=document.getElementById("t50");
+var sonuc=document.getElementById("sonuc");
+ 
+b1.onclick=topla; 
+b2.onclick=topla; 
+b3.onclick=topla; 
+b4.onclick=topla; 
+ 
+function topla(){
+ 
+sonuc.innerHTML=Number(sonuc.innerHTML)+Number(this.value);
+}
+ 
+</script>
+</body>
+</html>
