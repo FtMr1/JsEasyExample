@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS01</title>
+</head>
+<style>
+ 
+</style>
+<body>
+<table>
+<tr>
+<td>Şifre:</td>
+<td><input type="password" id="t1"></td>
+</tr>
+<tr>
+<td> Şifre Tekrar: </td>
+<td> <input type="password" id="t2"> </td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="button" id="kontrol" value="ŞİFRE KONTROL">
+</td>
+</tr>
+</table>
+ 
+<div id="sonuc"></div> 
+ 
+<script>
+var t1=document.getElementById("t1");
+var t2=document.getElementById("t2");
+var sonuc=document.getElementById("sonuc");
+ 
+document.getElementById("kontrol").onclick=function(){ 
+if(t1.value==t2.value)
+sonuc.innerHTML="Doğru Giriş Yapabilirsiniz";
+else
+sonuc.innerHTML="Şifreler HATALI! Tekrar Kontrol edin";
+}
+</script>
+</body>
+</html>
